@@ -172,7 +172,7 @@
       </div>
     </section><!-- End About Section -->
 
-    <!-- ======= Services Section ======= -->
+    <!-- ======= Services Section ======= 
     <section id="services" class="section-bg">
       <div class="container" data-aos="fade-up">
 
@@ -231,9 +231,10 @@
         </div>
 
       </div>
-    </section><!-- End Services Section -->
+    </section> End Services Section -->
 
     <!-- ======= Why Us Section ======= -->
+
     <section id="why-us">
       <div class="container" data-aos="fade-up">
         <header class="section-header">
@@ -325,21 +326,25 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
+          {% for project in projects.all %}
           <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="project-name">
+                <h4 class="project-name-tag">{{ project.projectName }}</h4>
+                <p class="project-category-tag" style="color: white;padding: 3px;margin-top:5px;margin-bottom: -3px;padding-left: 5px;padding-right: 5px; border-radius: 5px; background-color: black;font-size: 12px;">{{ project.projectCategory }}</p>
+            </div>
             <div class="portfolio-wrap">
-              <img src="../../static/Resources/img/portfolio/app1.jpg" class="img-fluid" alt="">
+              <img src="{{ project.projectImage.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4><a href="portfolio-details.html">App 1</a></h4>
-                <p>App</p>
+                <p style="text-transform: none;padding: 10px;">{{ project.projectDescription }}</p>
                 <div>
-                  <a href="../../static/Resources/img/portfolio/app1.jpg" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
-                  <a href="portfolio-details.html" class="link-details" title="More Details"><i class="ion ion-android-open"></i></a>
+                  <a href="{{ project.projectImage.url }}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="{{ project.projectLink }}" class="link-details" title="More Details" target="new window"><i class="ion ion-android-open"></i></a>
                 </div>
               </div>
             </div>
           </div>
-
+          {% endfor %}
+          <!--
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="../../static/Resources/img/portfolio/web3.jpg" class="img-fluid" alt="">
@@ -451,13 +456,13 @@
               </div>
             </div>
           </div>
-
+        -->
         </div>
 
       </div>
     </section><!-- End Portfolio Section -->
 
-    <!-- ======= Testimonials Section ======= -->
+    <!-- ======= Testimonials Section ======= 
     <section id="testimonials" class="section-bg">
       <div class="container" data-aso="zoom-in">
 
@@ -521,9 +526,9 @@
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
+    </section> End Testimonials Section -->
 
-    <!-- ======= Team Section ======= -->
+    <!-- ======= Team Section ======= 
     <section id="team">
       <div class="container" data-aos="fade-up">
         <div class="section-header">
@@ -608,9 +613,9 @@
         </div>
 
       </div>
-    </section><!-- End Team Section -->
+    </section> End Team Section -->
 
-    <!-- ======= Clients Section ======= -->
+    <!-- ======= Clients Section ======= 
     <section id="clients" class="section-bg">
 
       <div class="container" data-aos="fade-up">
@@ -674,9 +679,9 @@
 
       </div>
 
-    </section><!-- End Clients Section -->
+    </section> End Clients Section -->
 
-    <!-- ======= Contact Section ======= -->
+    <!-- ======= Contact Section ======= 
     <section id="contact">
       <div class="container-fluid" data-aos="fade-up">
 
@@ -741,7 +746,7 @@
         </div>
 
       </div>
-    </section><!-- End Contact Section -->
+    </section> End Contact Section -->
 
   </main><!-- End #main -->
 

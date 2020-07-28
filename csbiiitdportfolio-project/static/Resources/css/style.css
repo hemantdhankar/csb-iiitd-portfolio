@@ -837,20 +837,27 @@ section {
 
 #portfolio .portfolio-item {
   position: relative;
-  overflow: hidden;
   margin-bottom: 30px;
 }
 
 #portfolio .portfolio-item .portfolio-wrap {
-  overflow: hidden;
   position: relative;
-  border-radius: 6px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   margin: 0;
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover img {
   opacity: 0.4;
   transition: 0.3s;
+}
+#portfolio .portfolio-item .project-category-tag {
+  display: none;
+}
+
+#portfolio .portfolio-item:hover .project-category-tag {
+  display: inline-block;
+  transition: 0.4s linear;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info {
@@ -874,6 +881,18 @@ section {
   font-weight: 700;
   margin-bottom: 14px;
   padding-bottom: 0;
+}
+
+.project-name{
+  text-align: center; 
+  background-color: #1c4fc3;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
+.project-name h4{
+  margin-bottom: 0;
 }
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
