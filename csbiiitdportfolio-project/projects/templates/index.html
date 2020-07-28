@@ -311,9 +311,9 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h3 class="section-title">Our Portfolio</h3>
+          <h3 class="section-title">Our Projects</h3>
         </header>
-
+        <!--
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
@@ -324,24 +324,30 @@
             </ul>
           </div>
         </div>
-
+        -->
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           {% for project in projects.all %}
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div style="margin-bottom: 100px;" class="col-lg-4 col-md-6 portfolio-item filter-app">
             <div class="project-name">
                 <h4 class="project-name-tag">{{ project.projectName }}</h4>
                 <p class="project-category-tag" style="color: white;padding: 3px;margin-top:5px;margin-bottom: -3px;padding-left: 5px;padding-right: 5px; border-radius: 5px; background-color: black;font-size: 12px;">{{ project.projectCategory }}</p>
             </div>
-            <div class="portfolio-wrap">
+            <div style="box-shadow: 4px 10px 10px #ddd8d8;" class="portfolio-wrap">
               <img src="{{ project.projectImage.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <p style="text-transform: none;padding: 10px;">{{ project.projectDescription }}</p>
                 <div>
-                  <a href="{{ project.projectImage.url }}" data-gall="portfolioGallery" title="App 1" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  <a href="{{ project.projectImage.url }}" data-gall="portfolioGallery" title="Project Display" class="venobox link-preview"><i class="ion ion-eye"></i></a>
+                  {% if project.projectLink != "https://github.com/" %}
                   <a href="{{ project.projectLink }}" class="link-details" title="More Details" target="new window"><i class="ion ion-android-open"></i></a>
+                  {% endif %}
                 </div>
               </div>
+              <div class="team-name">
+                  <p  style="margin: 0;font-size: 8px;">Done by: {{ project.projectTeam }}</p>
+              </div>
             </div>
+
           </div>
           {% endfor %}
           <!--

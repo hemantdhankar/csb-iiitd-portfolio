@@ -855,8 +855,12 @@ section {
   display: none;
 }
 
-#portfolio .portfolio-item:hover .project-category-tag {
+#portfolio .portfolio-item:hover .project-category-tag{
   display: inline-block;
+  transition: 0.4s linear;
+}
+#portfolio .portfolio-item:hover .team-name{
+  display: block;
   transition: 0.4s linear;
 }
 
@@ -885,7 +889,7 @@ section {
 
 .project-name{
   text-align: center; 
-  background-color: #1c4fc3;
+  background-color: rgba(28, 79, 195, 0.9);
   color: white;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
@@ -893,8 +897,17 @@ section {
 }
 .project-name h4{
   margin-bottom: 0;
+  font-size: 16px;
 }
-
+.team-name{
+  display: none;
+  text-align: center; 
+  background-color: rgba(28, 79, 195, 0.9);
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 10px;
+}
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info h4 a {
   color: #fff;
 }
