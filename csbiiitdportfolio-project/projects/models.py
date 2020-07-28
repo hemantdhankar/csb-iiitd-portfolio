@@ -1,5 +1,7 @@
 from django.db import models
 from multiselectfield import MultiSelectField
+
+
 # Create your models here.
 class Project(models.Model):
 	projectName = models.CharField(max_length=60)
@@ -20,7 +22,7 @@ class Project(models.Model):
 	projectCategory = MultiSelectField(
 		choices=Categories,
 	)
-	projectTeam = models.CharField(max_length=80)
+	projectTeam = models.CharField(max_length=100)
 
 	def __str__(self):
 		return self.projectName
