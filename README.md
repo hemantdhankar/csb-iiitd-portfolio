@@ -1,2 +1,2 @@
 # csb-iiitd-portfolio
-The Portfolio website for CSB branch at IIITD
+The Portfolio website for CSB branch @ IIITD
