@@ -837,7 +837,7 @@ section {
 
 #portfolio .portfolio-item {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 80px;
 }
 
 #portfolio .portfolio-item .portfolio-wrap {
@@ -863,6 +863,7 @@ section {
   display: block;
   transition: 0.4s linear;
 }
+
 
 #portfolio .portfolio-item .portfolio-wrap .portfolio-info {
   position: absolute;
