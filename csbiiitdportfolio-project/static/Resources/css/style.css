@@ -848,7 +848,7 @@ section {
 }
 
 #portfolio .portfolio-item .portfolio-wrap:hover img {
-  opacity: 0.4;
+  opacity: 0.1;
   transition: 0.3s;
 }
 #portfolio .portfolio-item .project-category-tag {
