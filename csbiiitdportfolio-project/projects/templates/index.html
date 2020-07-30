@@ -1,60 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>CSB Portfolio</title>
-  <meta content="" name="descriptison">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="../../static/Resources/img/favicon.png" rel="icon">
-  <link href="../../static/Resources/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="../../static/Vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/venobox/venobox.css" rel="stylesheet">
-  <link href="../../static/Vendors/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="../../static/Resources/css/style.css" rel="stylesheet">
-
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <!-- <h1><a href="index.html">CSB @ IIITD</a></h1> -->
-        <a href="#header" class="scrollto"><img src="../../media/images/csb-coloured.svg" alt="" class="img-fluid" style="height: 100%; width: 100%;"></a>
-      </div>
-
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header" class="scrollto">Home</a></li>
-          <li><a href="#about" class="scrollto">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li> 
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-
-    </div>
-  </header><!-- #header -->
-
+{% extends 'base.html' %}
+{% block content %}
   <!-- ======= Intro Section ======= -->
   <section id="intro" class="clearfix">
     <div class="container" data-aos="fade-up">
@@ -67,7 +12,7 @@
         <h2 style="color: white;">A one of a kind Undergrad Programme at IIITD</h2>
         <div>
           <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="#services" class="btn-services scrollto">Our Services</a>
+          <a href="#portfolio" class="btn-services scrollto">Our Portfolio</a>
         </div>
       </div>
 
@@ -84,7 +29,7 @@
           <h3>About Us</h3>
           <p>
             <!-- A one of a kind programme aimed at training Highly efficient <b>Computer Science</b> Undergraduates  who understand its application in concepts such as Healthcare, Data-Sciences, Machine Learning and Artificial Intelligence for BioMedical Data to design and create technologies that have the potential to change the world -->
-            Individuals that can seamlessly integrate the foundations of computer science and mathematics to ask data driven questions in domains such as Healthcare and Medicine
+            We are individuals who can seamlessly integrate computer science and mathematics foundations to ask data-driven questions in domains such as Healthcare and Medicine.
           </p>
         </header>
 
@@ -127,10 +72,10 @@
           <div class="col-lg-6 pt-5 pt-lg-0" data-aos="fade-left">
             <h4>Highly competitive individuals trained in the latest <strong>Computer Science</strong> curriculum</h4>
             <p>
-              We are not limited to the world class syllabus that is prescribed by the Institute. Many of us have been constantly outperforming other graduate students in places such as the prestigious <b>GSOC</b> and <b>Microsoft Codess</b> Programs.
+              We are not limited to the world-class syllabus that is prescribed by the Institute. Many of us have been continuously outperforming other graduate students in places like the prestigious <b>GSOC</b> and <b>Microsoft Codess</b> Programs.
             </p>
             <p>
-              Our competitive nature and the drive to reach the top always keeps us on top of our toes. This makes sure that we have an in-depth knowledge of the latest tools and technologies so that we can <b>design</b> and <b>implement</b> efficient software solutions using suitable <b>Algorithms</b>, <b>Data-Structures</b> and other computing techniques
+              Our competitive nature and the drive to reach the top always keeps us on top of our toes. This makes sure that we have an in-depth knowledge of the latest tools and technologies to <b>design</b> and <b>implement</b> efficient software solutions using suitable <b>Algorithms</b>, <b>Data-Structures</b> and other computing techniques
             </p>
           </div>
         </div>
@@ -141,15 +86,15 @@
           </div>
 
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-right">
-            <h4>We also undertake a specialization in the domains of Healthcare and Computational Biology</h4>
+            <h4 style="font-weight: 400;">We also undertake a specialization in the domains of <strong>Healthcare</strong> and <strong>Computational Biology</strong></h4>
             <p>
-              With the advent of high-throughput techniques, biological sciences are grappling with a paradigm shift towards data-intensive explorations and challenges for management and analysis of massive data.
+              With the advent of high-throughput techniques, biological sciences grapple with a paradigm shift towards data-intensive explorations and challenges for management and analysis of massive data.
             </p>
             <p>
               Making progress on these frontiers requires insight into <b>biological processes, algorithms, machine learning techniques, mathematical modeling</b>, apart from <b>numerical and programming skills.</b>
             </p>
             <p>
-              Thus, interdisciplinary education that imparts knowledge of foundations of biology and computer science as well as training in modeling and analysis of biomedical data is the key to create personnel who can provide solutions to problems on the interface of computation and biology.
+              Thus, interdisciplinary education that imparts knowledge of foundations of biology & computer science and training in modeling & analysis of biomedical data is the key to creating personnel who can provide solutions to problems on the interface of computation and biology.
             </p>
           </div>
 
@@ -297,7 +242,7 @@
       <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-          <h3 class="section-title">Some of the Awesome Work We have Undertaken<br><br></h3>
+          <h3 class="section-title">Some of our Awesome Projects<br><br></h3>
         </header>
         <!--
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -318,7 +263,7 @@
                 <h4 class="project-name-tag">{{ project.projectName }}</h4>
                 <p class="project-category-tag" style="color: white;padding: 3px;margin-top:5px;margin-bottom: -3px;padding-left: 5px;padding-right: 5px; border-radius: 5px; background-color: black;font-size: 12px;">{{ project.projectCategory }}</p>
             </div>
-            <div style="box-shadow: 4px 10px 10px #ddd8d8;" class="portfolio-wrap">
+            <div style="box-shadow: 6px 10px 10px rgba(0,0,0,0.3);" class="portfolio-wrap">
               <img src="{{ project.projectImage.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
                 <p style="text-transform: none;padding: 10px;">{{ project.projectDescription }}</p>
@@ -673,92 +618,31 @@
 
     </section> End Clients Section -->
 
-    <!-- ======= Contact Section ======= 
+    <!-- ======= Contact Section ======= -->
     <section id="contact">
-      <div class="container-fluid" data-aos="fade-up">
-
+      <div class="container-fluid" data-aos="fade-up"  style="padding-bottom: 30px;">
         <div class="section-header">
           <h3>Contact Us</h3>
         </div>
 
-        <div class="row">
-
-          <div class="col-lg-6">
-            <div class="map mb-4 mb-lg-0">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 312px;" allowfullscreen></iframe>
-            </div>
+        <div class="row" style="">
+          <div class="row mr-auto ml-auto">
+            {% for placementTeamMember in placementTeamMembers.all %}
+              <div class="card" style="width: 20rem;box-shadow: 6px 10px 10px rgba(0,0,0,0.2);margin: 20px;">
+                <img class="card-img-top" src="{{ placementTeamMember.memberPicture.url }}" alt="Card image cap" height="290px">
+                <div class="card-body" style="color: white;background-color: rgba(28, 79, 195,1)">
+                  <h5 class="card-title" style="margin-bottom: 10px;">{{ placementTeamMember.memberName }}</h5>
+                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;">{{ placementTeamMember.memberDesignation }}</p>
+                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Email:</b> {{ placementTeamMember.memberEmail }}</p>
+                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Office No:</b> {{ placementTeamMember.memberPhone }}</p>
+                </div>
+              </div>
+            {% endfor %}            
           </div>
-
-          <div class="col-lg-6">
-            <div class="row">
-              <div class="col-md-5 info">
-                <i class="ion-ios-location-outline"></i>
-                <p>A108 Adam Street, NY 535022</p>
-              </div>
-              <div class="col-md-4 info">
-                <i class="ion-ios-email-outline"></i>
-                <p>info@example.com</p>
-              </div>
-              <div class="col-md-3 info">
-                <i class="ion-ios-telephone-outline"></i>
-                <p>+1 5589 55488 55</p>
-              </div>
-            </div>
-
-            <div class="form">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="form-row">
-                  <div class="form-group col-lg-6">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="form-group col-lg-6">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="mb-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit" title="Send Message">Send Message</button></div>
-              </form>
-            </div>
-          </div>
-
         </div>
-
       </div>
-    </section> End Contact Section -->
+    </section> <!--End Contact Section -->
 
   </main><!-- End #main -->
 
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="../../static/Vendors/jquery/jquery.min.js"></script>
-  <script src="../../static/Vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../static/Vendors/jquery.easing/jquery.easing.min.js"></script>
-  <script src="../../static/Vendors/php-email-form/validate.js"></script>
-  <script src="../../static/Vendors/counterup/counterup.min.js"></script>
-  <script src="../../static/Vendors/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../../static/Vendors/owl.carousel/owl.carousel.min.js"></script>
-  <script src="../../static/Vendors/waypoints/jquery.waypoints.min.js"></script>
-  <script src="../../static/Vendors/venobox/venobox.min.js"></script>
-  <script src="../../static/Vendors/aos/aos.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="../../static/Resources/js/main.js"></script>
-
-</body>
-
-</html>
+{% endblock %}

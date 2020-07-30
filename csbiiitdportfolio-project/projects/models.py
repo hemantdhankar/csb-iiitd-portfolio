@@ -26,3 +26,13 @@ class Project(models.Model):
 
 	def __str__(self):
 		return self.projectName
+
+class PlacementTeamMember(models.Model):
+	memberName = models.CharField(max_length=100)
+	memberDesignation = models.CharField(max_length=100)
+	memberEmail = models.EmailField(max_length=100)
+	memberPhone = models.CharField(max_length=100)
+	memberPicture = models.ImageField(upload_to="images/")
+
+	def __str__(self):
+		return self.memberName

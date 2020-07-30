@@ -55,7 +55,7 @@ ROOT_URLCONF = 'csbiiitdportfolio.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["templates"],
+        'DIRS': ["projects/templates"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
