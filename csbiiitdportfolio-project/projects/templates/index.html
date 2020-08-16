@@ -244,23 +244,26 @@
         <header class="section-header">
           <h3 class="section-title">Some of our Awesome Projects<br><br></h3>
         </header>
-        <!--
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-Web">Web</li>
+              <li data-filter=".filter-App">App</li>
+              <li data-filter=".filter-Data">Data Science</li>
+              <li data-filter=".filter-Machine">Machine Learning</li>
+              <li data-filter=".filter-Deep">Deep Learning</li>
+              <li data-filter=".filter-Research">Research</li>
+              <li data-filter=".filter-Database">DBMS</li>
+              <li data-filter=".filter-Other">Others</li>
             </ul>
           </div>
         </div>
-        -->
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
           {% for project in projects.all %}
-          <div style="" class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div style="" class="col-lg-4 col-md-6 portfolio-item {% for category in project.projectCategory %} filter-{{category}} {% endfor %}">
             <div class="project-name">
-                <h4 class="project-name-tag">{{ project.projectName }}</h4>
+                <h4 class="project-name-tag" style="{% if project.projectName|length > 40 %} font-size:12px;padding-top:2px;padding-bottom: 2px;  {% endif %}" >{{ project.projectName }}</h4>
                 <p class="project-category-tag" style="color: white;padding: 3px;margin-top:5px;margin-bottom: -3px;padding-left: 5px;padding-right: 5px; border-radius: 5px; background-color: black;font-size: 12px;">{{ project.projectCategory }}</p>
             </div>
             <div style="box-shadow: 6px 10px 10px rgba(0,0,0,0.3);" class="portfolio-wrap">
