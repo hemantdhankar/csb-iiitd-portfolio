@@ -8,11 +8,13 @@ $(document).ready(function(){
             $('nav').addClass('solidbackground');
             $('#navbarCollapse').addClass('solidbackground2');
             $('#navlogo').removeClass('nav-logo');
+            $('.new-back-to-top').removeClass('hidtop');
 
         }else{
             $('nav').removeClass('solidbackground');
             $('#navbarCollapse').removeClass('solidbackground2');
             $('#navlogo').addClass('nav-logo');
+            $('.new-back-to-top').addClass('hidtop');
             
         }
     }, {

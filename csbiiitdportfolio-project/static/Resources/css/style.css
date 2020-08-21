@@ -523,10 +523,10 @@ footer{
     
 }
 
+
 /* Back to top button */
-.back-to-top {
+.new-back-to-top {
   position: fixed;
-  display: none;
   background: #007bff;
   color: #fff;
   width: 44px;
@@ -541,13 +541,17 @@ footer{
   z-index: 11;
 }
 
-.back-to-top i {
+.hidtop{
+  display: none;
+
+}
+.new-back-to-top i {
   padding-top: 12px;
   color: #fff;
 }
 
 @media (max-width: 768px) {
-  .back-to-top {
+  .new-back-to-top {
     bottom: 15px;
   }
 }
