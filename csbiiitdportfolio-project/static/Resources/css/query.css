@@ -1,13 +1,48 @@
-
-/*---------------------SMALL PHONES-------------------------*/
-@media only screen and (max-width:480px){
-    
+@media only screen and (min-width:1281px){
+    .main-image{
+       height: 150px;
+       margin-left: 70px;
+    }
 }
 
 
+/*----------------BIG TAB TO DESKTOP-----------------------*/
+@media only screen and (max-width:1281px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    .row{
+        padding: 0 2%;
+    }
+ 
+    .main-image{
+       height: 100px;
+       margin-left: 50px;
+    }
+
+}
+
+/*----------------SMALL TABS TO BIG TAB-----------------------*/
+@media only screen and (max-width:1023px){
+    body{font-size: 16px;}
+    section{padding: 60px 0;}
+    .long-copy{
+    width:80%;
+    margin-left: 10%;
+}
+    .steps-box{   margin-top: 10px; }
+    .works-steps{margin-bottom: 40px;}
+    .works-steps:last-of-type{margin-bottom: 80px}
+
+
+}
+
 /*----------------SMALL PHONES TO TABS----------------------*/
 @media only screen and (max-width:767px){
-    col{width: 100%;}
+    col{
+        width: 100%;
+    }
     .mobile-nav-icon{
         display: inline-block;
     }
@@ -22,36 +57,39 @@
         display: block;
         border: 0;
     }
-}
-
-
-/*----------------SMALL TABS TO BIG TAB-----------------------*/
-@media only screen and (max-width:1023px){
-    body{font-size: 16px;}
-    section{padding: 60px 0;}
-    .long-copy{
-    width:80%;
-    margin-left: 10%;
-}
-    .steps-box{   margin-top: 10px; }
-    .works-steps{margin-bottom: 40px;}
-    .works-steps:last-of-type{margin-bottom: 80px}
-}
-
-
-
-
-/*----------------BIG TAB TO DESKTOP-----------------------*/
-@media only screen and (max-width:1200px){
-    .hero-text-box{
-        width: 100%;
-        padding: 0 2%;
-}
-    .row{
-        padding: 0 2%;
+    .main-image{
+       height: 50px;
     }
-    
+
 }
+
+/*---------------------SMALL PHONES-------------------------*/
+@media only screen and (max-width:480px){
+    .main-image{
+        height: 80px;
+        margin-left: 25px;
+        margin-top: -80px;
+        margin-bottom: 30px;
+    }
+    .btn{
+        margin-bottom: 20px;
+    }
+    .title-1, .title-2{
+        margin-top: 30px;
+        font-size: 22px;
+    }
+
+    .description-1, .description-2{
+        font-size: 16px;
+    }
+
+}
+
+
+
+
+
+
 
 
 

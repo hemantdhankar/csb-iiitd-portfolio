@@ -13,45 +13,45 @@
   <!-- Favicons -->
   <link href="../../media/images/csb-coloured.svg" rel="icon">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+        <link rel="stylesheet"  type="text/css"  href="../../static/Resources/CSS/style.css">
+        <link rel="stylesheet"  type="text/css"  href="../../static/Resources/CSS/query.css">
+        <link rel="stylesheet"  type="text/css" href="../../static/Vendors/CSS/animate.css">
+        <link href="../../static/Vendors/venobox/venobox.css" rel="stylesheet">
+        <link href="../../static/Vendors/aos/aos.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="../../static/Vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/ionicons/css/ionicons.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="../../static/Vendors/venobox/venobox.css" rel="stylesheet">
-  <link href="../../static/Vendors/aos/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="../../static/Resources/css/style.css" rel="stylesheet">
-
+        <link href="../../static/Vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="../../static/Vendors/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="../../static/Vendors/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Titillium+Web:wght@200;300;400;600&display=swap" rel="stylesheet">
+ 
 </head>
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container">
-
-      <div class="logo float-left">
-        <!-- Uncomment below if you prefer to use an text logo -->
-        <!-- <h1><a href="index.html">CSB @ IIITD</a></h1> -->
-        <a href="#header" class="scrollto"><img src="../../media/images/csb-coloured.svg" alt="" class="img-fluid" style="height: 100%; width: 100%;"></a>
-      </div>
-
-      <nav class="main-nav float-right d-none d-lg-block">
-        <ul>
-          <li class="active"><a href="#header" class="scrollto">Home</a></li>
-          <li><a href="#about" class="scrollto">About Us</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#contact">Contact Us</a></li>
-        </ul>
-      </nav><!-- .main-nav -->
-
+<body id="headerjs">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" style="padding-left: 0;padding-right: 0; height: 70px;">
+    <a class="nav-logo js--scroll-to-home" id="navlogo" href="#" style="margin-left: 40px;"><img src="../../media/images/csb-light.svg" alt="CSB White logo" style="height: 35px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" style=" height: 50px;">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse px-5" id="navbarCollapse" style="border-radius: 0px; border-bottom-right-radius: 20px;border-bottom-left-radius: 20px; float: right;margin-right: 2px;margin-top: -5px;">
+      <ul class="navbar-nav ml-auto">
+      <li class="nav-item active">
+        <a class="nav-link js--scroll-to-home" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js--scroll-to-about" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js--scroll-to-portfolio" href="#">Portfolio</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link js--scroll-to-contactus" href="#">Contact Us</a>
+      </li>
+      </ul>
     </div>
-  </header><!-- #header -->
+  </nav>
+
   {% block content %}
   {% endblock %}
 
@@ -59,41 +59,29 @@
   <footer id="footer">
     <div class="container" >
       <div class="copyright">
-        csbiiitdportfolio 2020
+        CSBIIITD @ 2020
       </div>
     </div>
 
-    <div class="container" >
-      <div class="copyright" style="font-size: 0px;">
-        &copy; Copyright <strong>NewBiz</strong>. All Rights Reserved
-      </div>
-      <div class="credits" style="font-size: 0px;">
-        <!--
-        All the links in the footer should remain intact.
-        You can delete the links only if you purchased the pro version.
-        Licensing information: https://bootstrapmade.com/license/
-        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=NewBiz
-      -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-    </div>
   </footer><!-- End Footer -->
-  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <a href="#" class="back-to-top js--scroll-to-home"><i class="fa fa-chevron-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="../../static/Vendors/jquery/jquery.min.js"></script>
-  <script src="../../static/Vendors/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../../static/Vendors/jquery.easing/jquery.easing.min.js"></script>
-  <script src="../../static/Vendors/php-email-form/validate.js"></script>
-  <script src="../../static/Vendors/counterup/counterup.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../../static/Vendors/JS/jquery.waypoints.min.js"></script>
+  <script src="../../static/Resources/JS/scripts.js"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="../../static/Vendors/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="../../static/Vendors/owl.carousel/owl.carousel.min.js"></script>
-  <script src="../../static/Vendors/waypoints/jquery.waypoints.min.js"></script>
-  <script src="../../static/Vendors/venobox/venobox.min.js"></script>
   <script src="../../static/Vendors/aos/aos.js"></script>
+  <script src="../../static/Vendors/venobox/venobox.min.js"></script>
+
+
 
   <!-- Template Main JS File -->
-  <script src="../../static/Resources/js/main.js"></script>
+  <script src="../../static/Resources/js/scripts.js"></script>
 
 </body>
 
