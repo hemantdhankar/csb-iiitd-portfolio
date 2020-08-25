@@ -4,7 +4,7 @@
   <header id="intro" class="clearfix js--section-intro">
     <div class="row">
         <div class="col-md">
-            <img class="main-image" src="../../media/images/csb-light.svg" alt=""style="">        
+            <img class="main-image" data-aos="zoom-out-up" data-aos-delay="200" src="../../media/images/csb-light.svg" alt=""style="">        
         </div>
         <div class="col-md" style="">
           <div style="padding-left: 10%;">
@@ -128,26 +128,25 @@
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="js--section-contactus">
-      <div class="container-fluid" data-aos="fade-up"  style="padding-bottom: 30px;">
+      <div class="container-fluid"  style="padding-bottom: 30px;">
         <div class="section-header">
           <h3>Contact Us</h3>
         </div>
-
-        <div class="row" style="">
-          <div class="row mr-auto ml-auto" >
-            {% for placementTeamMember in placementTeamMembers.all %}
-              <div class="card col-md-5" style="box-shadow: 6px 10px 10px rgba(0,0,0,0.2);margin: 20px;padding: 0;">
-                <img class="card-img-top" src="{{ placementTeamMember.memberPicture.url }}" alt="Card image cap" height="290px">
-                <div class="card-body" style="color: white;background-color: white; padding: 0;padding-bottom: 20px;">
-                  <h3 class="card-title" style="margin-bottom: 10px; font-size: 22px;">{{ placementTeamMember.memberName }}</h3>
-                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><strong>{{ placementTeamMember.memberDesignation }}</strong></p>
-                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Email:</b> {{ placementTeamMember.memberEmail }}</p>
-                  <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Office No:</b> {{ placementTeamMember.memberPhone }}</p>
-                </div>
+          <div class="row" style="">
+              {% for placementTeamMember in placementTeamMembers.all %}
+              <div class="col-md-3" data-aos="fade-up" data-aos-delay="300" style="margin-bottom: 30px;max-width: 400px;">
+                <div class="card placementCard" style="box-shadow: 6px 10px 10px rgba(0,0,0,0.2);padding: 0;border-radius: 20px;">
+                  <img class="card-img-top" src="{{ placementTeamMember.memberPicture.url }}" alt="Card image cap" height="290px" style="border-radius: 20px;">
+                  <div class="card-body" style="color: white;background-color: white; padding: 0;padding-bottom: 20px; border-radius: 20px;">
+                    <h3 class="card-title" style="margin-bottom: 10px; font-size: 20px;">{{ placementTeamMember.memberName }}</h3>
+                    <p class="card-text" style="margin-bottom: 10px;font-size: 13px; color: #000;"><strong>{{ placementTeamMember.memberDesignation }}</strong></p>
+                    <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Email:</b> {{ placementTeamMember.memberEmail }}</p>
+                    <p class="card-text" style="margin-bottom: 10px;font-size: 13px;"><b>Office No:</b> {{ placementTeamMember.memberPhone }}</p>
+                  </div>
+                </div>                
               </div>
-            {% endfor %}            
-          </div>
-        </div>
+              {% endfor %}            
+          </div>          
       </div>
     </section> <!--End Contact Section -->
 

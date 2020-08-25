@@ -1,7 +1,7 @@
 @media only screen and (min-width:1281px){
     .main-image{
        height: 150px;
-       margin-left: 70px;
+       margin-left: 120px;
     }
 }
 
@@ -18,7 +18,7 @@
  
     .main-image{
        height: 100px;
-       margin-left: 50px;
+       margin-left: 100px;
     }
 
 }
@@ -34,6 +34,7 @@
     .steps-box{   margin-top: 10px; }
     .works-steps{margin-bottom: 40px;}
     .works-steps:last-of-type{margin-bottom: 80px}
+
 
 
 }
@@ -58,7 +59,9 @@
         border: 0;
     }
     .main-image{
-       height: 50px;
+       height: 80px;
+       margin-left: 60px;
+       margin-bottom: 20px;
     }
 
 }
