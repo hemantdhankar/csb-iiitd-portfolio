@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
+{% load custom_tags %}
   <!-- ======= Intro Section ======= -->
   <header id="intro" class="clearfix js--section-intro">
     <div class="row">
@@ -105,7 +106,15 @@
             <div style="box-shadow: 6px 10px 10px rgba(0,0,0,0.3);" class="portfolio-wrap">
               <img src="{{ project.projectImage.url }}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <p style="text-transform: none;padding: 10px;">{{ project.projectDescription }}</p>
+                <p style="text-transform: none;padding: 5px;">{{ project.projectDescription }}<br>
+                  <div class="row justify-content-center" style="padding: 10px;">
+                    {% for technology in project.projectTechnologies|split:"," %}
+                      <div style="font-size: 14px; color:#fff;margin: 5px; padding-left: 5px;padding-right: 5px; border: solid 2px #fff; border-radius: 10px;">
+                          {{ technology }}
+                      </div>
+                    {% endfor %}                                                                  
+                  </div>
+                </p>
                 <div>
                   <a href="{{ project.projectImage.url }}" data-gall="portfolioGallery" title="Project Display" class="venobox link-preview"><i class="ion ion-eye"></i></a>
                   {% if project.projectLink != "https://github.com/" %}
